@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<!--
+Anna-Malin Joshammar 
+anjo1407
+anjo1407@student.miun.se
+-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i|Open+Sans|Poiret+One" rel="stylesheet">
+    <title>DT146G - Projekt</title>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86269432-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Google Analytics -->
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="header-logo"><a href="index.html">Milersättning.nu</a></h1>
+    </header>
+    <main class="full-box">
+        <section>
+            <div id="panel">
+                <h2>Räkna ut din milersättning</h2>
+                <div id="panel-one">
+                    <input id="start" class="controls" type="text" placeholder="Hemma">
+                    <br>
+                    <input id="end" class="controls" type="text" placeholder="Arbetet">
+                    <br>
+                    <input id="days" type="text" placeholder="Antal dagar">
+                    <br>
+                </div>
+
+                <div id="panel-two">
+                    <p>Enkel resa: <span id="total"></span></p>
+                    <p>Tur och Retur: <span id="totalMiles"></span></p>
+                </div>
+                <button id="btnClac" type="button">Räkna ut</button>
+            </div>
+
+            <div id="panel-resultat">
+                <h3>Din milersättning</h3>
+                <p id="result"></p>
+            </div>
+            <div id="important">
+                <h3>Viktiga datum 2017</h3>
+                <p>21 Mars - Inkomstdeklaration 1 öppnar</p>
+                <p>2 Maj - Inkomstdeklaration 1 ska lämnas in</p>
+                <p>13 Nov - Du ska ha betalat in underskott av slutlig skatt</p>
+                <p>12 Dec - Du ska ha betalat in underskott av slutlig skatt</p>
+            </div>
+            
+                <div class="social-media-fb">
+                    <a href="https://www.linkedin.com/in/malin-joshammar"><img class="icon" alt="linkedin" src="img/1476208080_square-linkedin.png">Linkedin</a>
+                </div>
+                <div class="social-media-linkedin">
+                    <a href="https://www.facebook.com/malin.joshammar"><img class="icon" alt="facebook" src="img/1476208072_square-facebook.png">Facebook</a>
+                </div>
+            
+        </section>
+        <aside>
+            <div id="map"></div>
+        </aside>
+    </main>
+    <footer class="footer-text">
+        <div class="footer-first">
+            <p><a href="https://www.skatteverket.se/privat/skatter/bilochtrafik/avdragforresortillochfranarbetet.4.3810a01c150939e893f25603.html?q=resor" target="_blank">Skatteverket >> </a></p>
+        </div>
+        <div class="footer-second">
+            <p>Milersättning.nu är ett projekt under hösten 2016 för kursen <a href="https://www.miun.se/utbildning/kurser/sok-kursplan/kursplan?kursplanid=15939" target="_blank">DT146G</a> hos Mittuniversitetet.</p>
+        </div>
+        <div class="footer-third">
+            <p>Malin Joshammar &copy;2016</p>
+        </div>
+    </footer>
+    <!-- Google map & places api-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBOgzzrOzydeJ0iKh8SPmex8-Xm8WCNAk&callback=initMap&language=sv&region=SV&libraries=places" async defer></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
